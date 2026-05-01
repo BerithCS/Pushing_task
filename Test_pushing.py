@@ -242,7 +242,7 @@ OBJECT_PUSHED_BOTTOM_CENTER_WORLD = np.array([0.22, -0.26, 0.96557], dtype=np.fl
 OBJECT_HEIGHT         = 0.10
 OBJECT_DIAMETER       = 0.075
 OBJECT_RADIUS         = OBJECT_DIAMETER / 2.0
-OBJECT_MASS_KG        = 1.2
+OBJECT_MASS_KG        = 0.9
 OBJECT_COLOR          = np.array([1.0, 0.0, 0.0])
 OBJECT_CONTACT_OFFSET = 0.0001
 OBJECT_REST_OFFSET    = 0.0
@@ -725,8 +725,8 @@ if __name__ == "__main__":
     apply_cylinder_solver_iters(stage)
 
     # ── Physics materials ─────────────────────────────────────
-    apply_physics_material(stage, OBJECT_MESH_PATH,                                        0.35, 0.3)
-    apply_physics_material(stage, "/World/table_cover/Cube",                                1.0,  1.0)
+    apply_physics_material(stage, OBJECT_MESH_PATH,                                        0.2, 0.15)
+    apply_physics_material(stage, "/World/table_cover/Cube",                                0.9,  0.9)
     apply_physics_material(stage, "/World/m0609/m0609/link_6/adapter",                      0.4,  0.35)
     apply_physics_material(stage, "/World/CoRo_tactile/CoRo_tactile/Sponge/collision_mesh", 0.9,  0.8)
 

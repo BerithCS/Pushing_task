@@ -171,7 +171,7 @@ import torch
 _ = torch.zeros(4, device="cuda:0")
 
 from omni.isaac.kit import SimulationApp
-simulation_app = SimulationApp({"headless": False, "width": "1920", "height": "1080"})
+simulation_app = SimulationApp({"headless": True, "width": "1920", "height": "1080"})
 
 import os
 import csv

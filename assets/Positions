@@ -1,0 +1,30 @@
+Position = (X,Y,Z)    
+Rotation = (X,Y,Z)
+
+coro_dosaan_table
+Position = (0,0,0)   (world frame)
+Rotation = (0,0,90)
+
+table_cover
+Position = (0.122,-0.025,0.94452)	(world frame)
+Rotation = (0,0,0)		
+
+robot_mount
+Position = (-0.3125,0.025,0.9405)	(world frame)
+Rotation = (0,0,0)
+
+m0609
+Position = (-0.3125,0.025,0.0.946)	(world frame)
+Rotation = (0,0,0)
+
+CoRo_tactile
+Position = (-0.3341,0.04338,2.054)	(world frame)
+Rotation = (-90,0,0)
+
+
+Joints 
+world - coro_dosaan_table 		-> Fixed  (Excluded from articulation)
+coro_dosaan_table - table_cover 	-> Fixed  (Excluded from articulation)
+coro_dosaan_table - robot_mount 	-> Fixed  (Excluded from articulation)
+robot_mount - m0609 			-> Fixed  (Excluded from articulation)
+m0609 (link 6) - CoRo_tactile (case_m) 	-> Fixed  (Excluded from articulation)

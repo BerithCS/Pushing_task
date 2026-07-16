@@ -1,0 +1,2 @@
+cd IsaacLab
+./isaaclab.sh -p /home/berith/Documents/Pushing_task/Test_pushing_isaaclab.py

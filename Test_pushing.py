@@ -171,7 +171,7 @@ import torch
 _ = torch.zeros(4, device="cuda:0")
 
 from omni.isaac.kit import SimulationApp
-simulation_app = SimulationApp({"headless": True, "width": "1920", "height": "1080"})
+simulation_app = SimulationApp({"headless": False, "width": "1920", "height": "1080"})
 
 import os
 import csv
@@ -1076,7 +1076,7 @@ if __name__ == "__main__":
             phase_counter += 1
             if phase_counter >= END_FRAMES:
                 print(f"[PHASE] End wait done ({END_FRAMES} frames). Closing simulation.")
-                break
+                # break
             continue
 
     # ── Cleanup ───────────────────────────────────────────────

@@ -7,8 +7,10 @@ from matplotlib.widgets import Slider, Button
 # ================================================================
 # CONFIG
 # ================================================================
-DEF_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_deformation.csv"
-TAC_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_tactiledata.csv"
+
+DEF_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_deformation_20260716_151953.csv"
+TAC_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_tactiledata_20260716_151953.csv"
+
 NODES_FILE = "/home/berith/Documents/Pushing_task/CNN_tactile/Nodes_id_filtered.csv"
 
 N_ROWS   = 18

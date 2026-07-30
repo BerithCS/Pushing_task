@@ -1,25 +1,46 @@
 Position = (X,Y,Z)    
 Rotation = (X,Y,Z)
 
+
 coro_dosaan_table
 Position = (0,0,0)   (world frame)
 Rotation = (0,0,90)
 
+
 table_cover
-Position = (0.122,-0.025,0.94452)	(world frame)
+Position = (0.122,-0.025,0.94452)	(world Xform)
 Rotation = (0,0,0)		
 
+
 robot_mount
-Position = (-0.3125,0.025,0.9405)	(world frame)
+Position = (-0.3125,0.025,0.9405)	(world Xform)
 Rotation = (0,0,0)
+
 
 m0609
-Position = (-0.3125,0.025,0.0.946)	(world frame)
+Position = (-0.3125,0.025,0.946)	(world Xform)
 Rotation = (0,0,0)
 
+
+Support_sensor
+Position = (-0.03741,-0.03111,1.03451)	(m0609 Xform)
+Rotation = (90,90,0)
+
+
+
 CoRo_tactile
-Position = (-0.3341,0.04338,2.054)	(world frame)
+Position = (-0.3341,0.04338,2.054)	(world Xform)
 Rotation = (-90,0,0)
+
+Position = (-0.0216,0.01838,1.108)	(m0609 Xform)
+Rotation = (-90,0,0)
+
+Position = (0.04949,0.07349,0.01581)	(Support_sensor Xform)
+Rotation = (-90,0,0)
+
+
+
+
 
 
 Joints 

@@ -1,2 +1,5 @@
 cd IsaacLab
 ./isaaclab.sh -p /home/berith/Documents/Pushing_task/Test_pushing_isaaclab.py
+
+cd ~/isaac-lab-3
+./isaaclab.sh -p /media/berith/DataDrive/Documents/Pushing_task/Test_pushing_isaaclab3.py --viz kit

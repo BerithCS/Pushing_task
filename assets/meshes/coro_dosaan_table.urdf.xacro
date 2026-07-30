@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<robot name="ur10_2f85" xmlns:xacro="http://ros.org/wiki/xacro">
+	
+	<!-- WORLD -->
+	<link name="world"/>
+
+	<!-- TABLE -->
+	<xacro:include filename="/home/berith/Documents/Coro_table_doosan/coro_large_vention_table.urdf.xacro"/>
+	<xacro:coro_large_vention_table prefix=""/>
+	<joint name="table_to_world" type="fixed">
+		<parent link="world"/>
+		<child link="table_base"/>
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	</joint>
+
+</robot>

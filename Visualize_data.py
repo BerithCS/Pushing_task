@@ -8,8 +8,8 @@ from matplotlib.widgets import Slider, Button
 # CONFIG
 # ================================================================
 
-DEF_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_deformation_20260716_162646.csv"
-TAC_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_tactiledata_20260716_162646.csv"
+DEF_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_env1_30cm_deformation_20260903_074652.csv"
+TAC_CSV    = "/home/berith/Documents/Pushing_task/sponge_data_env1_30cm_tactiledata_20260903_074652.csv"
 
 NODES_FILE = "/home/berith/Documents/Pushing_task/CNN_tactile/Nodes_id_filtered.csv"
 
@@ -127,6 +127,7 @@ for fid in frames:
     fd      = def_df[def_df["frame"] == fid].copy()
     dz      = compute_dz(fd, ordered_ids)
     dz      = dz - baseline
+    # dz      = dz
     dz_grid = dz.reshape(N_ROWS, N_COLS).astype(np.float32)
     dz_grids.append(dz_grid)
 
